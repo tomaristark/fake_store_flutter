@@ -1,3 +1,4 @@
+import 'package:fake_store/constant/string.dart';
 import 'package:flutter/material.dart';
 
 class CartPage extends StatelessWidget {
@@ -7,7 +8,7 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text("Cart List"),
+        title:const Text(kCartList),
       ),
     );
   }

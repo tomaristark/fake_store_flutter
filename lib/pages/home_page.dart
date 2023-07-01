@@ -1,4 +1,6 @@
 
+import 'package:fake_store/constant/dimen.dart';
+import 'package:fake_store/constant/string.dart';
 import 'package:fake_store/pages/detail_page.dart';
 import 'package:fake_store/utilities/extensions.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +15,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("FakeStore"),
+        title: const Text(kFakeStore),
         actions:const  [
           CartButton()
         ],
@@ -26,7 +28,7 @@ class HomePage extends StatelessWidget {
         },
          separatorBuilder: (context,index){
           return const SizedBox(
-            height: 10,
+            height: kSP10x,
           );
         },
          itemCount: 10)

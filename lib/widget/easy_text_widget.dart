@@ -1,11 +1,12 @@
 
+import 'package:fake_store/constant/dimen.dart';
 import 'package:flutter/material.dart';
 
 class EasyText extends StatelessWidget {
   const EasyText({
     super.key,
     required this.text,
-    this.fontSize=14,
+    this.fontSize=kFS14x,
     this.fontWeight=FontWeight.w400,
     this.maxLine,
     });
